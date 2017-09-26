@@ -1,0 +1,39 @@
+body {
+  background-color: #222; }
+  body ul {
+    position: relative;
+    list-style: none;
+    margin-top: 30vh; }
+    body ul li {
+      width: 15vw;
+      height: 40vh;
+      position: absolute;
+      right: calc(100% / 2.25);
+      transform-origin: 90% 92%;
+      transition: .3s;
+      margin: 0 auto;
+      box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.75);
+      cursor: pointer;
+      display: flex; }
+      body ul li:hover ~ li {
+        transform: rotate(120deg);
+        cursor: pointer; }
+      body ul li img {
+        width: 7vw;
+        margin: 0 auto; }
+    body ul .carte--pique img, body ul .carte--trefle img, body ul .carte--carreau img {
+      width: 11vw; }
+    body ul .carte--carreau {
+      background: #E0E0E0;
+      transform: rotate(-20deg); }
+    body ul .carte--trefle {
+      background: #E0E0E0;
+      transform: rotate(-10deg); }
+    body ul .carte--pique {
+      background: #E0E0E0;
+      transform: rotate(0deg); }
+    body ul .carte--coeur {
+      background: #E0E0E0;
+      transform: rotate(10deg); }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,21 @@
+@charset "UTF-8";
 body {
-  background-color: #222; }
+  height: 100vh;
+  overflow: hidden;
+  background-color: #222;
+  background: -moz-radial-gradient(center, ellipse cover, #8a0000 0%, #460000 60%, #460000 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #8a0000), color-stop(50%, #460000), color-stop(100%, #460000));
+  background: -webkit-radial-gradient(center, ellipse cover, #8a0000 0%, #460000 60%, #460000 100%);
+  background: radial-gradient(ellipse at center, #8a0000 0%, #8a0000 60%, #460000 100%); }
+  body #nuance  {
+    width: 100vw;
+    display: block; }
   body ul {
     position: relative;
     list-style: none;
-    margin-top: 30vh; }
+    margin-top: 30vh;
+    width: 100vw;
+    z-index: 0; }
     body ul li {
       width: 15vw;
       height: 40vh;
@@ -13,9 +25,9 @@ body {
       transition: .3s;
       margin: 0 auto;
       box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.75);
-      cursor: pointer;
-      display: flex; }
-      body ul li:hover ~ li {
+      display: flex;
+      cursor: pointer; }
+      body ul li:hover ~ .items {
         transform: rotate(120deg);
         cursor: pointer; }
       body ul li img {

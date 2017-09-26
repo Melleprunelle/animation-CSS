@@ -1,9 +1,22 @@
 body {
+    height: 100vh;
+    overflow: hidden;
     background-color: #222;
+    background: -moz-radial-gradient(center, ellipse cover, #8a0000 0%, #460000 60%, #460000 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #8a0000), color-stop(50%, #460000), color-stop(100%, #460000));
+    background: -webkit-radial-gradient(center, ellipse cover, #8a0000 0%, #460000 60%, #460000 100%);
+    background: radial-gradient(ellipse at center, #8a0000 0%, #8a0000 60%, #460000 100%);
+ 
+    #nuance {
+        width: 100vw;
+        display: block;
+    }
     ul {
         position: relative;
         list-style: none;
         margin-top: 30vh;
+        width: 100vw;
+        z-index: 0;
         li {
             width: 15vw;
             height: 40vh;
@@ -12,18 +25,28 @@ body {
             transform-origin: 90% 92%;
             transition: .3s;
             margin: 0 auto;
-            box-shadow: -2px 3px 5px 0px rgba(0,0,0,0.75);            
+            box-shadow: -2px 3px 5px 0px rgba(0,0,0,0.75);
+            display: flex;            
             cursor: pointer;
-            &:hover~li {
+            &:hover~.items {
                 transform: rotate(120deg);
                 cursor: pointer;
             }
-            display: flex;
             img {
                 width: 7vw;
                 margin: 0 auto;
             }
         }
+        // #luck {
+        //     width: initial;
+        //     height: auto;
+        //     margin: 0 auto;
+        //     position: absolute;
+        //     right: 42vw;            
+        //     bottom: -45vh;
+        //     box-shadow: none;           
+        // }
+       
         $list: 
             carreau #E0E0E0,
             trefle #E0E0E0,
